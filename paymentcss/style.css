@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(4, 2, 32);
+}
+
+
+nav {
+    background-color: rgb(1, 40, 53);
+    padding: 10px 40px 10px 70px;
+    border: 1px solid #000;
+    border-left: none;
+    border-right: none;
+    position: sticky;
+    top: 0px;
+    margin: 0px;
+    width: 100%;
+
+}
+
+
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li.logo {
+    flex: 1;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    
+}
+
+nav ul div.items {
+    padding: 0 25px;
+    display: inline-flex;
+    color: white;
+}
+
+nav ul div.items a {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0 12px;
+    color: white;
+}
+
+nav ul div.items a:hover {
+    color: rgb(70, 155, 155);
+}
+
+nav ul .search-icon {
+    height: 40px;
+    width: 240px;
+    display: flex;
+    background: #f2f2f2;
+    border-radius: 5px;
+}
+
+nav ul .search-icon input {
+    height: 100%;
+    width: 200px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    color: #000;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+}
+
+nav ul .search-icon .icon {
+    height: 100%;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+nav ul .search-icon .icon:hover {
+    background: #e6e6e6;
+}
+
+nav ul .search-icon .icon span {
+    color: #222222;
+    font-size: 18px;
+}
+
+nav ul li.btn {
+    font-size: 29px;
+    flex: 1;
+    padding: 0 40px;
+    display: none;
+    color: white;
+}
+
+nav ul li.btn span {
+    height: 42px;
+    width: 42px;
+    text-align: center;
+    line-height: 42px;
+    border: 1px solid #151515;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+
+/* BOOK */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    color: black;
+    height: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+}
+
+.row{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+    padding: 8px;
+    
+}
+
+.col-2{
+    flex: 25%;
+}
+
+.col-1{
+    flex: 50%;
+    
+}
+
+.col{
+    flex: 75%;
+    
+}
+
+.col-2,
+.col-1,
+.col{
+    padding: 0 16px;
+}
+
+.container{
+    background-image: url(/css/Qk5yb2.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    box-shadow: 7px 7px 7px 7px rgb(0, 0, 0, 0.7);
+    border: 0.1rem rgb(0, 0, 0, 0.7);
+
+}
+
+
+input[type=text], input[type=email], input[type=number]{
+    color: rgb(15, 15, 15);
+    width: 100%;
+    margin-bottom: 20px;
+    padding:12px;
+    border: 1px solid cyan;
+    border-radius: 3px;
+    box-shadow: 0 0.5rem 1rem rgb(0, 0, 0, 0.7);
+    border: 0.1rem solid rgb(0, 0, 0, 0.7);
+
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.icon-container{
+    margin-bottom: 20px;
+    padding: 1px 0;
+    font-size: 24px;
+}
+
+.btn-1 {
+    background-color: rgb(53, 189, 107);
+    color: rgb(6, 0, 0);
+    padding:12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 3px;
+    width: 100% ;
+    cursor:pointer;
+    font-size: 17px;
+    box-shadow: 0 0.5rem 1rem rgb(0, 0, 0, 0.7);
+    border: 0.1rem solid rgb(0, 0, 0, 0.7);
+
+}
+
+
+.btn-1:hover{
+    background-color: rgb(81, 209, 151);
+}
+
+a{
+    color: blue;
+}
+
+hr{
+    border: 1px solid rgb(0, 0, 0);
+}
+
+span.price{
+    float:right;
+    color: gray;
+}
+
+
+
+.paymentoptions {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        flex: 1;
+        justify-content: center;
+        margin-bottom: 2rem;
+
+    
+    }
+    .radio:checked+label {
+        background-color: rgb(81, 209, 151);
+        color: #fff;
+        transition: 0.5s;
+    }
+
+
+
+/* media */
+
+    @media (max-width: 940px) {
+        .row{
+            flex-direction: column-reverse;
+        }
+    
+        .col-2 {
+            margin-bottom: 20px;
+        }
+    
+        }
+    
+        img {
+            width: 120px;
+            height: auto;
+        }
+
+
+
+        @media  (max-width: 400px) {
+       
+                nav {
+                    min-width: 300px;
+                }
+            
+                nav ul {
+                    flex-wrap: nowrap;
+                    display: flex;
+                
+                }
+            
+                nav ul li .searchbar {
+                   width: 50vmin;
+                }
+            
+                nav ul li input {
+                    width: 40vmin;
+                }
+            
+                nav ul li .search-icon {
+                    width: 10vmin;
+                }
+            }
+            
+            
+            @media screen and (max-width: 1052px) {
+                nav {
+                    padding: 10px 40px 10px 0px;
+                    position: sticky;
+                    top: 0px;
+                }
+            
+                nav ul li.logo {
+                    display: none;
+                }
+            
+                nav ul div.items {
+                    flex: 4;
+                }
+            }
+            
+            @media screen and (max-width: 800px) {
+                nav ul li.btn {
+                    display: block;
+ 
+                }
+            
+                nav {
+                    z-index: 1;
+                    padding: 9px 40px 9px 0;
+                    position: sticky;
+                    top:0px;
+                   
+            
+                }
+            
+                nav ul div.items {
+                    z-index: -1;
+                    position: fixed;
+                    top: -220px;
+                    right: 0;
+                    width: 100%;
+                    background-color: rgb(1, 40, 53);
+                    display: inline-block;
+                    transition: top .4s;
+                }
+            
+                nav ul div.items.show {
+                    top: 60px;
+                }
+            
+                nav ul div.items li {
+                    text-align: center;
+                    line-height: 30px;
+                    margin: 0;
+                }
+            
+                nav ul div.items li a {
+                    font-size: 19px;
+                }
+            }
+            
